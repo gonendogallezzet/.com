@@ -1,1444 +1,1148 @@
 <!DOCTYPE html>
 <html lang="tr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Gönen | Doğal Lezzet</title>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 
-    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
+<!-- ================= HEADER ================= -->
 
-    <!-- =========================
-         HEADER
-    ========================== -->
+<header class="header">
 
-    <header class="header">
+    <a href="#home" class="logo">
+        <img src="logo.png" alt="Gönen Doğal Lezzet Logo">
+    </a>
 
-        <a href="#home" class="logo">
-            <img src="images/logo.png" alt="Gönen Logo">
+    <nav class="navbar">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#products">Ürünler</a>
+        <a href="#order">Nasıl Sipariş Verilir?</a>
+        <a href="#contact">İletişim</a>
+    </nav>
+
+    <button class="cart-btn" onclick="openCart()">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <span>Sepet</span>
+        <b id="cartCount">0</b>
+    </button>
+
+    <button class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+
+</header>
+
+
+<!-- ================= HOME ================= -->
+
+<section class="home" id="home">
+
+    <div class="home-content">
+
+        <span class="small-title">
+            DOĞAL • TAZE • GÜVENİLİR
+        </span>
+
+        <h1>
+            Doğal Lezzet,<br>
+            <span>Gerçek Kalite.</span>
+        </h1>
+
+        <p>
+            Özenle hazırlanan doğal ürünlerimizi
+            sofralarınıza ulaştırıyoruz.
+        </p>
+
+        <div class="home-buttons">
+            <a href="#products" class="btn">
+                Ürünleri İncele
+            </a>
+
+            <a href="#contact" class="btn btn-light">
+                İletişime Geç
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURES ================= -->
+
+<section class="features">
+
+    <div class="feature-box">
+
+        <i class="fa-solid fa-leaf"></i>
+
+        <div>
+            <h3>Doğal Ürünler</h3>
+            <p>
+                Doğal ve kaliteli ürünleri sizlerle buluşturuyoruz.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="feature-box">
+
+        <i class="fa-solid fa-heart"></i>
+
+        <div>
+            <h3>Özenle Hazırlanır</h3>
+            <p>
+                Her ürünümüz özenle hazırlanır ve paketlenir.
+            </p>
+        </div>
+
+    </div>
+
+
+    <div class="feature-box">
+
+        <i class="fa-solid fa-truck"></i>
+
+        <div>
+            <h3>Güvenli Teslimat</h3>
+            <p>
+                Siparişlerinizi güvenli şekilde teslim ediyoruz.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about section" id="about">
+
+    <div class="about-image">
+
+        <img src="home.png" alt="Gönen Doğal Ürünler">
+
+    </div>
+
+
+    <div class="about-content">
+
+        <span class="section-title">
+            BİZ KİMİZ?
+        </span>
+
+        <h2>
+            Doğallığı ve kaliteyi
+            sofralarınıza taşıyoruz.
+        </h2>
+
+        <p>
+            Gönen olarak doğal ürünleri sizlerle buluşturmayı
+            amaçlıyoruz. Ürünlerimizi özenle seçiyor ve
+            kaliteli şekilde hazırlıyoruz.
+        </p>
+
+        <p>
+            Amacımız doğal lezzetleri herkesin kolayca
+            ulaşabileceği şekilde sunmak.
+        </p>
+
+        <a href="#products" class="btn">
+            Ürünlerimizi Gör
         </a>
 
-        <nav class="navbar">
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTS ================= -->
+
+<section class="products section" id="products">
+
+    <div class="section-heading">
+
+        <span class="section-title">
+            ÜRÜNLERİMİZ
+        </span>
+
+        <h2>
+            Doğal Lezzetler
+        </h2>
+
+        <p>
+            Özenle hazırladığımız ürünlerimizi keşfedin.
+        </p>
+
+    </div>
+
+
+    <div class="product-grid">
+
+
+        <!-- ZEYTİNYAĞI -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img src="zeytinyagi.jpg"
+                     alt="Gönen Zeytinyağı">
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Gönen Zeytinyağı</h3>
+
+                <p>
+                    Doğal ve kaliteli zeytinyağı.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        350 TL
+                    </strong>
+
+                    <button
+                        onclick="openProduct(
+                        'Gönen Zeytinyağı',
+                        350,
+                        'zeytinyagi.jpg')">
+
+                        İncele
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- SALÇA -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img src="salca.jpg"
+                     alt="Gönen Salçası">
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Gönen Salçası</h3>
+
+                <p>
+                    Geleneksel yöntemlerle hazırlanmış salça.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        1000 TL
+                    </strong>
+
+                    <button
+                        onclick="openProduct(
+                        'Gönen Salçası',
+                        1000,
+                        'salca.jpg')">
+
+                        İncele
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- REÇEL -->
+
+        <div class="product-card">
+
+            <div class="product-image">
+
+                <img src="recel.jpg"
+                     alt="Gönen Reçeli">
+
+            </div>
+
+            <div class="product-info">
+
+                <h3>Gönen Reçeli</h3>
+
+                <p>
+                    Ev yapımı doğal reçel.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        250 TL
+                    </strong>
+
+                    <button
+                        onclick="openProduct(
+                        'Gönen Reçeli',
+                        250,
+                        'recel.jpg')">
+
+                        İncele
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ORDER ================= -->
+
+<section class="order section" id="order">
+
+    <div class="section-heading">
+
+        <span class="section-title">
+            NASIL SİPARİŞ VERİLİR?
+        </span>
+
+        <h2>
+            4 Adımda Sipariş
+        </h2>
+
+    </div>
+
+
+    <div class="order-grid">
+
+        <div class="order-box">
+
+            <span>01</span>
+
+            <i class="fa-solid fa-basket-shopping"></i>
+
+            <h3>Ürünü Seç</h3>
+
+            <p>
+                Beğendiğiniz ürünü seçin.
+            </p>
+
+        </div>
+
+
+        <div class="order-box">
+
+            <span>02</span>
+
+            <i class="fa-solid fa-cart-plus"></i>
+
+            <h3>Sepete Ekle</h3>
+
+            <p>
+                Ürünü sepetinize ekleyin.
+            </p>
+
+        </div>
+
+
+        <div class="order-box">
+
+            <span>03</span>
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            <h3>Sipariş Ver</h3>
+
+            <p>
+                WhatsApp üzerinden siparişinizi gönderin.
+            </p>
+
+        </div>
+
+
+        <div class="order-box">
+
+            <span>04</span>
+
+            <i class="fa-solid fa-box"></i>
+
+            <h3>Teslim Al</h3>
+
+            <p>
+                Siparişiniz hazırlanıp size ulaştırılır.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CAMPAIGN ================= -->
+
+<section class="campaign">
+
+    <div class="campaign-content">
+
+        <span>
+            DOĞAL LEZZETLER
+        </span>
+
+        <h2>
+            Sofranızda Doğal<br>
+            Lezzetler Olsun.
+        </h2>
+
+        <p>
+            Kaliteli ürünlerimizi şimdi keşfedin.
+        </p>
+
+        <a href="#products" class="btn">
+            Ürünleri İncele
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact section" id="contact">
+
+    <div class="section-heading">
+
+        <span class="section-title">
+            İLETİŞİM
+        </span>
+
+        <h2>
+            Bize Ulaşın
+        </h2>
+
+        <p>
+            Sipariş ve bilgi almak için bizimle iletişime geçebilirsiniz.
+        </p>
+
+    </div>
+
+
+    <div class="contact-grid">
+
+
+        <div class="contact-info">
+
+            <div class="contact-box">
+
+                <i class="fa-solid fa-phone"></i>
+
+                <div>
+                    <h3>Telefon</h3>
+
+                    <a href="tel:+905315906477">
+                        0531 590 64 77
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <div>
+                    <h3>WhatsApp</h3>
+
+                    <a
+                        href="https://wa.me/905315906477"
+                        target="_blank">
+
+                        WhatsApp'tan Yaz
+
+                    </a>
+                </div>
+
+            </div>
+
+
+            <div class="contact-box">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <div>
+                    <h3>Konum</h3>
+
+                    <p>
+                        Türkiye
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form"
+              onsubmit="sendContact(event)">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Adınız Soyadınız"
+                required>
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Telefon Numaranız"
+                required>
+
+            <textarea
+                id="message"
+                placeholder="Mesajınız"
+                rows="6"
+                required></textarea>
+
+            <button type="submit" class="btn">
+                WhatsApp'tan Gönder
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="footer-content">
+
+        <div class="footer-logo">
+
+            <img src="logo.png"
+                 alt="Gönen">
+
+            <p>
+                Doğal Lezzet, Gerçek Kalite.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Hızlı Menü</h3>
 
             <a href="#home">Ana Sayfa</a>
             <a href="#about">Hakkımızda</a>
-            <a href="#products">Ürünlerimiz</a>
+            <a href="#products">Ürünler</a>
             <a href="#contact">İletişim</a>
 
-            <button class="cart-button" onclick="openCart()">
-                <i class="fas fa-shopping-cart"></i>
-                <span id="cart-count">0</span>
-            </button>
+        </div>
 
-        </nav>
 
-        <button class="menu-button" onclick="toggleMenu()">
-            <i class="fas fa-bars"></i>
+        <div class="footer-social">
+
+            <h3>Bizi Takip Edin</h3>
+
+            <div>
+
+                <a href="#">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+
+                <a href="#">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 Gönen | Tüm Hakları Saklıdır.
+        </p>
+
+    </div>
+
+</footer>
+
+
+<!-- ================= PRODUCT MODAL ================= -->
+
+<div class="product-modal" id="productModal">
+
+    <div class="modal-content">
+
+        <button
+            class="modal-close"
+            onclick="closeProduct()">
+
+            <i class="fa-solid fa-xmark"></i>
+
         </button>
 
-    </header>
+
+        <img
+            id="modalImage"
+            src=""
+            alt="">
 
 
+        <div class="modal-info">
 
-    <!-- =========================
-         ANA SAYFA
-    ========================== -->
-
-    <section class="home" id="home">
-
-        <div class="home-content">
-
-            <span class="home-subtitle">
-                DOĞAL • TAZE • GÜVENİLİR
-            </span>
-
-            <h1>
-                Doğal Lezzet,<br>
-                <span>Gerçek Kalite.</span>
-            </h1>
-
-            <p>
-                Doğadan sofranıza uzanan, özenle hazırlanmış
-                doğal ve kaliteli ürünler.
-            </p>
-
-            <div class="home-buttons">
-
-                <a href="#products" class="btn">
-                    Ürünleri İncele
-                </a>
-
-                <a href="#about" class="btn secondary-btn">
-                    Bizi Tanıyın
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         ÖZELLİKLER
-    ========================== -->
-
-    <section class="features">
-
-        <div class="feature">
-
-            <i class="fas fa-leaf"></i>
-
-            <div>
-                <h3>Doğal Ürünler</h3>
-                <p>
-                    Doğallığı ön planda tutuyoruz.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="feature">
-
-            <i class="fas fa-heart"></i>
-
-            <div>
-                <h3>Özenle Hazırlanır</h3>
-                <p>
-                    Her ürünümüz özenle hazırlanır.
-                </p>
-            </div>
-
-        </div>
-
-
-        <div class="feature">
-
-            <i class="fas fa-truck"></i>
-
-            <div>
-                <h3>Güvenli Teslimat</h3>
-                <p>
-                    Siparişlerinizi güvenle ulaştırıyoruz.
-                </p>
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         HAKKIMIZDA
-    ========================== -->
-
-    <section class="about" id="about">
-
-        <div class="about-image">
-
-            <img src="images/home.png" alt="Gönen doğal ürünleri">
-
-        </div>
-
-
-        <div class="about-content">
-
-            <span class="section-label">
-                BİZ KİMİZ?
-            </span>
-
-            <h2>
-                Doğallığı
-                <span>sofranıza</span>
-                getiriyoruz.
+            <h2 id="modalName">
+                Ürün
             </h2>
 
-            <p>
-                Gönen olarak doğal ve kaliteli ürünleri
-                sizlerle buluşturmayı amaçlıyoruz.
+            <p id="modalDescription">
+                Doğal ve kaliteli ürün.
             </p>
 
-            <p>
-                Ürünlerimizi özenle seçiyor ve geleneksel
-                lezzetleri modern bir anlayışla sizlere sunuyoruz.
-            </p>
+            <strong id="modalPrice">
+                0 TL
+            </strong>
 
-            <a href="#products" class="btn">
-                Ürünlerimizi Gör
-            </a>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         ÜRÜNLER
-    ========================== -->
-
-    <section class="products" id="products">
-
-        <div class="heading">
-
-            <span class="section-label">
-                ÜRÜNLERİMİZ
-            </span>
-
-            <h2>
-                Doğal Lezzetler
-            </h2>
-
-            <p>
-                Özenle seçilmiş Gönen ürünlerini keşfedin.
-            </p>
-
-        </div>
-
-
-        <div class="product-grid">
-
-
-            <!-- ZEYTİNYAĞI -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img
-                        src="images/zeytinyagi.jpg"
-                        alt="Gönen Zeytinyağı">
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <h3>
-                        Gönen Zeytinyağı
-                    </h3>
-
-                    <p>
-                        1 litre doğal ve kaliteli zeytinyağı.
-                    </p>
-
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            350 TL
-                        </span>
-
-                        <button
-                            class="detail-button"
-                            onclick="openProduct(
-                                'Gönen Zeytinyağı',
-                                350,
-                                '1 Litre doğal zeytinyağı',
-                                'images/zeytinyagi.jpg'
-                            )">
-
-                            İncele
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- SALÇA -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img
-                        src="images/salca.jpg"
-                        alt="Gönen Salçası">
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <h3>
-                        Gönen Salçası
-                    </h3>
-
-                    <p>
-                        1 kg doğal, yoğun kıvamlı ve
-                        geleneksel salça.
-                    </p>
-
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            1000 TL
-                        </span>
-
-                        <button
-                            class="detail-button"
-                            onclick="openProduct(
-                                'Gönen Salçası',
-                                1000,
-                                '1 kg doğal ev yapımı salça',
-                                'images/salca.jpg'
-                            )">
-
-                            İncele
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- REÇEL -->
-
-            <div class="product-card">
-
-                <div class="product-image">
-
-                    <img
-                        src="images/recel.jpg"
-                        alt="Gönen Reçeli">
-
-                </div>
-
-
-                <div class="product-info">
-
-                    <h3>
-                        Gönen Reçeli
-                    </h3>
-
-                    <p>
-                        Geleneksel yöntemlerle hazırlanmış
-                        doğal reçel.
-                    </p>
-
-
-                    <div class="product-bottom">
-
-                        <span class="product-price">
-                            250 tl
-                        </span>
-
-                        <button
-                            class="detail-button"
-                            onclick="openProduct(
-                                'Gönen Reçeli',
-                                0,
-                                'Doğal ve geleneksel yöntemlerle hazırlanmış reçel',
-                                'images/recel.jpg'
-                            )">
-
-                            İncele
-
-                        </button>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         NASIL SİPARİŞ VERİLİR
-    ========================== -->
-
-    <section class="order-steps">
-
-        <div class="heading">
-
-            <span class="section-label">
-                NASIL SİPARİŞ VERİLİR?
-            </span>
-
-            <h2>
-                Sipariş Vermek Çok Kolay
-            </h2>
-
-        </div>
-
-
-        <div class="steps">
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    01
-                </div>
-
-                <i class="fas fa-box-open"></i>
-
-                <h3>
-                    Ürünü Seç
-                </h3>
-
-                <p>
-                    Beğendiğiniz ürünü inceleyin
-                    ve sepete ekleyin.
-                </p>
-
-            </div>
-
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    02
-                </div>
-
-                <i class="fas fa-shopping-cart"></i>
-
-                <h3>
-                    Sepetini Oluştur
-                </h3>
-
-                <p>
-                    Almak istediğiniz ürünleri
-                    sepetinize ekleyin.
-                </p>
-
-            </div>
-
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    03
-                </div>
-
-                <i class="fas fa-file-alt"></i>
-
-                <h3>
-                    Bilgilerini Gir
-                </h3>
-
-                <p>
-                    Teslimat bilgilerinizi
-                    doldurun.
-                </p>
-
-            </div>
-
-
-
-            <div class="step">
-
-                <div class="step-number">
-                    04
-                </div>
-
-                <i class="fab fa-whatsapp"></i>
-
-                <h3>
-                    Siparişini Gönder
-                </h3>
-
-                <p>
-                    Siparişinizi WhatsApp üzerinden
-                    bize gönderin.
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         KAMPANYA
-    ========================== -->
-
-    <section class="campaign">
-
-        <div class="campaign-content">
-
-            <span>
-                DOĞAL LEZZETLERİ KEŞFET
-            </span>
-
-            <h2>
-                Sofranıza Doğallık Katın
-            </h2>
-
-            <p>
-                Gönen'in özenle hazırlanan ürünlerini
-                şimdi keşfedin.
-            </p>
-
-            <a href="#products" class="btn">
-                Alışverişe Başla
-            </a>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         İLETİŞİM
-    ========================== -->
-
-    <section class="contact" id="contact">
-
-        <div class="heading">
-
-            <span class="section-label">
-                İLETİŞİM
-            </span>
-
-            <h2>
-                Bizimle İletişime Geçin
-            </h2>
-
-            <p>
-                Sorularınız veya siparişleriniz için
-                bizimle iletişime geçebilirsiniz.
-            </p>
-
-        </div>
-
-
-        <div class="contact-container">
-
-
-            <div class="contact-info">
-
-                <div class="contact-box">
-
-                    <i class="fas fa-phone"></i>
-
-                    <div>
-
-                        <h3>
-                            Telefon
-                        </h3>
-
-                        <p>
-                            Sipariş ve bilgi için
-                            bizimle iletişime geçebilirsiniz.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-box">
-
-                    <i class="fab fa-whatsapp"></i>
-
-                    <div>
-
-                        <h3>
-                            WhatsApp
-                        </h3>
-
-                        <p>
-                            Siparişlerinizi WhatsApp
-                            üzerinden kolayca iletebilirsiniz.
-                        </p>
-
-                    </div>
-
-                </div>
-
-
-                <div class="contact-box">
-
-                    <i class="fas fa-location-dot"></i>
-
-                    <div>
-
-                        <h3>
-                            Konum
-                        </h3>
-
-                        <p>
-                            Gönen
-                        </p>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-
-
-            <!-- Sipariş Formu -->
-
-            <div class="order-form">
-
-                <h3>
-                    Sipariş Bilgileri
-                </h3>
-
-                <form onsubmit="sendOrder(event)">
-
-                    <input
-                        type="text"
-                        id="customerName"
-                        placeholder="Ad Soyad"
-                        required>
-
-
-                    <input
-                        type="tel"
-                        id="customerPhone"
-                        placeholder="Telefon"
-                        required>
-
-
-                    <input
-                        type="text"
-                        id="customerCity"
-                        placeholder="İl / İlçe"
-                        required>
-
-
-                    <textarea
-                        id="customerAddress"
-                        placeholder="Açık adresiniz"
-                        rows="4"
-                        required></textarea>
-
-
-                    <textarea
-                        id="customerNote"
-                        placeholder="Sipariş notunuz (isteğe bağlı)"
-                        rows="3"></textarea>
-
-
-                    <button
-                        type="submit"
-                        class="btn">
-
-                        <i class="fab fa-whatsapp"></i>
-
-                        WhatsApp'tan Sipariş Ver
-
-                    </button>
-
-                </form>
-
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- =========================
-         FOOTER
-    ========================== -->
-
-    <footer class="footer">
-
-        <div class="footer-content">
-
-
-            <div class="footer-logo">
-
-                <img
-                    src="images/logo.png"
-                    alt="Gönen Logo">
-
-                <p>
-                    Doğal lezzetleri sofranıza
-                    ulaştırıyoruz.
-                </p>
-
-            </div>
-
-
-            <div class="footer-links">
-
-                <h3>
-                    Hızlı Menü
-                </h3>
-
-                <a href="#home">
-                    Ana Sayfa
-                </a>
-
-                <a href="#about">
-                    Hakkımızda
-                </a>
-
-                <a href="#products">
-                    Ürünlerimiz
-                </a>
-
-                <a href="#contact">
-                    İletişim
-                </a>
-
-            </div>
-
-
-            <div class="footer-social">
-
-                <h3>
-                    Bizi Takip Edin
-                </h3>
-
-                <div>
-
-                    <a href="#">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-facebook"></i>
-                    </a>
-
-                    <a href="#">
-                        <i class="fab fa-whatsapp"></i>
-                    </a>
-
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-        <div class="footer-bottom">
-
-            <p>
-                © 2026 Gönen. Tüm hakları saklıdır.
-            </p>
-
-        </div>
-
-    </footer>
-
-
-
-    <!-- =========================
-         ÜRÜN DETAY MODALI
-    ========================== -->
-
-    <div
-        class="product-modal"
-        id="productModal">
-
-        <div class="modal-content">
 
             <button
-                class="close-modal"
-                onclick="closeProduct()">
+                class="btn"
+                onclick="addCurrentProduct()">
 
-                <i class="fas fa-times"></i>
+                <i class="fa-solid fa-cart-plus"></i>
+
+                Sepete Ekle
 
             </button>
 
+        </div>
 
-            <img
-                id="modalImage"
-                src=""
-                alt="">
+    </div>
 
-
-            <div class="modal-info">
-
-                <h2 id="modalName">
-                    Ürün
-                </h2>
-
-                <p id="modalDescription">
-                    Ürün açıklaması
-                </p>
+</div>
 
 
-                <div class="modal-price"
-                    id="modalPrice">
+<!-- ================= CART ================= -->
 
-                    0 TL
+<div class="cart-overlay"
+     id="cartOverlay"
+     onclick="closeCart()">
+</div>
 
-                </div>
+
+<div class="cart-drawer"
+     id="cartDrawer">
+
+    <div class="cart-header">
+
+        <h2>
+            Sepetim
+        </h2>
+
+        <button onclick="closeCart()">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
 
 
-                <div class="quantity-control">
+    <div class="cart-items"
+         id="cartItems">
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+
+            <span>
+                Toplam
+            </span>
+
+            <strong id="cartTotal">
+                0 TL
+            </strong>
+
+        </div>
+
+
+        <button
+            class="btn whatsapp-btn"
+            onclick="sendOrder()">
+
+            <i class="fa-brands fa-whatsapp"></i>
+
+            WhatsApp'tan Sipariş Ver
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<script>
+
+/* ================= VARIABLES ================= */
+
+let cart = [];
+
+let currentProduct = {
+    name: "",
+    price: 0,
+    image: ""
+};
+
+
+/* ================= MOBILE MENU ================= */
+
+function toggleMenu() {
+
+    document.querySelector(".navbar")
+        .classList.toggle("active");
+
+}
+
+
+/* ================= PRODUCT MODAL ================= */
+
+function openProduct(name, price, image) {
+
+    currentProduct = {
+        name: name,
+        price: price,
+        image: image
+    };
+
+
+    document.getElementById("modalName")
+        .textContent = name;
+
+
+    document.getElementById("modalPrice")
+        .textContent = price + " TL";
+
+
+    document.getElementById("modalImage")
+        .src = image;
+
+
+    document.getElementById("productModal")
+        .classList.add("active");
+
+}
+
+
+function closeProduct() {
+
+    document.getElementById("productModal")
+        .classList.remove("active");
+
+}
+
+
+/* ================= ADD CART ================= */
+
+function addCurrentProduct() {
+
+    addToCart(
+        currentProduct.name,
+        currentProduct.price,
+        currentProduct.image
+    );
+
+    closeProduct();
+
+}
+
+
+function addToCart(name, price, image) {
+
+    const existingProduct = cart.find(
+        item => item.name === name
+    );
+
+
+    if (existingProduct) {
+
+        existingProduct.quantity++;
+
+    } else {
+
+        cart.push({
+            name: name,
+            price: price,
+            image: image,
+            quantity: 1
+        });
+
+    }
+
+
+    updateCart();
+
+    openCart();
+
+}
+
+
+/* ================= CART UPDATE ================= */
+
+function updateCart() {
+
+    const cartItems =
+        document.getElementById("cartItems");
+
+
+    const cartCount =
+        document.getElementById("cartCount");
+
+
+    const cartTotal =
+        document.getElementById("cartTotal");
+
+
+    cartItems.innerHTML = "";
+
+
+    let total = 0;
+    let count = 0;
+
+
+    cart.forEach((item, index) => {
+
+        total += item.price * item.quantity;
+
+        count += item.quantity;
+
+
+        const itemElement =
+            document.createElement("div");
+
+
+        itemElement.className =
+            "cart-item";
+
+
+        itemElement.innerHTML = `
+
+            <img src="${item.image}"
+                 alt="${item.name}">
+
+            <div class="cart-item-info">
+
+                <h4>${item.name}</h4>
+
+                <strong>
+                    ${item.price} TL
+                </strong>
+
+                <div class="quantity">
 
                     <button
-                        onclick="changeModalQuantity(-1)">
+                        onclick="changeQuantity(${index}, -1)">
                         -
                     </button>
 
-                    <span id="modalQuantity">
-                        1
+                    <span>
+                        ${item.quantity}
                     </span>
 
                     <button
-                        onclick="changeModalQuantity(1)">
+                        onclick="changeQuantity(${index}, 1)">
                         +
                     </button>
 
                 </div>
 
+            </div>
 
-                <button
-                    class="btn"
-                    onclick="addModalProduct()">
+            <button
+                class="remove-item"
+                onclick="removeFromCart(${index})">
 
-                    <i class="fas fa-cart-plus"></i>
+                <i class="fa-solid fa-trash"></i>
 
-                    Sepete Ekle
+            </button>
+        `;
 
-                </button>
+
+        cartItems.appendChild(itemElement);
+
+    });
+
+
+    cartCount.textContent = count;
+
+    cartTotal.textContent =
+        total.toLocaleString("tr-TR") + " TL";
+
+
+    if (cart.length === 0) {
+
+        cartItems.innerHTML = `
+
+            <div class="empty-cart">
+
+                <i class="fa-solid fa-cart-shopping"></i>
+
+                <p>
+                    Sepetiniz boş.
+                </p>
 
             </div>
 
-        </div>
+        `;
 
-    </div>
+    }
 
+}
 
 
-    <!-- =========================
-         SEPET
-    ========================== -->
+/* ================= QUANTITY ================= */
 
-    <div
-        class="cart-overlay"
-        id="cartOverlay"
-        onclick="closeCart()">
-    </div>
+function changeQuantity(index, amount) {
 
+    cart[index].quantity += amount;
 
-    <div
-        class="cart-drawer"
-        id="cartDrawer">
 
-        <div class="cart-header">
+    if (cart[index].quantity <= 0) {
 
-            <h2>
-                Sepetim
-            </h2>
+        cart.splice(index, 1);
 
-            <button onclick="closeCart()">
+    }
 
-                <i class="fas fa-times"></i>
 
-            </button>
+    updateCart();
 
-        </div>
+}
 
 
-        <div
-            class="cart-items"
-            id="cartItems">
+/* ================= REMOVE ================= */
 
-            <p class="empty-cart">
-                Sepetiniz boş.
-            </p>
+function removeFromCart(index) {
 
-        </div>
+    cart.splice(index, 1);
 
+    updateCart();
 
-        <div class="cart-footer">
+}
 
-            <div class="cart-total">
 
-                <span>
-                    Toplam
-                </span>
+/* ================= OPEN CART ================= */
 
-                <strong id="cartTotal">
-                    0 TL
-                </strong>
+function openCart() {
 
-            </div>
+    document.getElementById("cartDrawer")
+        .classList.add("active");
 
 
-            <button
-                class="btn"
-                onclick="goToOrder()">
+    document.getElementById("cartOverlay")
+        .classList.add("active");
 
-                Sipariş Ver
+}
 
-            </button>
 
+/* ================= CLOSE CART ================= */
 
-            <button
-                class="clear-cart"
-                onclick="clearCart()">
+function closeCart() {
 
-                Sepeti Temizle
+    document.getElementById("cartDrawer")
+        .classList.remove("active");
 
-            </button>
 
-        </div>
+    document.getElementById("cartOverlay")
+        .classList.remove("active");
 
-    </div>
+}
 
 
+/* ================= WHATSAPP ORDER ================= */
 
-    <!-- =========================
-         JAVASCRIPT
-    ========================== -->
+function sendOrder() {
 
-    <script>
+    if (cart.length === 0) {
 
-        /* =========================
-           SEPET
-        ========================== */
+        alert("Sepetiniz boş.");
 
-        let cart = [];
+        return;
 
+    }
 
-        function addToCart(name, price, quantity = 1) {
 
-            const existingProduct = cart.find(
-                item => item.name === name
-            );
+    let message =
+        "Merhaba, Gönen ürünlerinden sipariş vermek istiyorum.%0A%0A";
 
 
-            if (existingProduct) {
+    let total = 0;
 
-                existingProduct.quantity += quantity;
 
-            } else {
+    cart.forEach(item => {
 
-                cart.push({
-                    name: name,
-                    price: price,
-                    quantity: quantity
-                });
+        const itemTotal =
+            item.price * item.quantity;
 
-            }
 
-            updateCart();
+        total += itemTotal;
 
-            alert("Ürün sepete eklendi.");
 
-        }
+        message +=
+            "Ürün: " +
+            item.name +
+            "%0A";
 
 
+        message +=
+            "Adet: " +
+            item.quantity +
+            "%0A";
 
-        function updateCart() {
 
-            const cartItems =
-                document.getElementById("cartItems");
+        message +=
+            "Fiyat: " +
+            itemTotal +
+            " TL%0A%0A";
 
-            const cartCount =
-                document.getElementById("cart-count");
+    });
 
-            const cartTotal =
-                document.getElementById("cartTotal");
 
+    message +=
+        "Toplam: " +
+        total +
+        " TL";
 
-            let total = 0;
-            let count = 0;
 
+    const whatsappNumber =
+        "905315906477";
 
-            cartItems.innerHTML = "";
 
+    const url =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        message;
 
-            if (cart.length === 0) {
 
-                cartItems.innerHTML = `
-                    <p class="empty-cart">
-                        Sepetiniz boş.
-                    </p>
-                `;
+    window.open(url, "_blank");
 
-            }
+}
 
 
-            cart.forEach((item, index) => {
+/* ================= CONTACT FORM ================= */
 
-                total += item.price * item.quantity;
+function sendContact(event) {
 
-                count += item.quantity;
+    event.preventDefault();
 
 
-                const div =
-                    document.createElement("div");
+    const name =
+        document.getElementById("name").value;
 
-                div.className = "cart-item";
 
+    const phone =
+        document.getElementById("phone").value;
 
-                div.innerHTML = `
 
-                    <div>
+    const message =
+        document.getElementById("message").value;
 
-                        <h4>${item.name}</h4>
 
-                        <p>
-                            ${item.price} TL
-                        </p>
+    const text =
+        "Merhaba, Gönen hakkında bilgi almak istiyorum.%0A%0A" +
+        "Ad Soyad: " +
+        encodeURIComponent(name) +
+        "%0A" +
+        "Telefon: " +
+        encodeURIComponent(phone) +
+        "%0A" +
+        "Mesaj: " +
+        encodeURIComponent(message);
 
-                    </div>
 
+    const whatsappNumber =
+        "905315906477";
 
-                    <div class="cart-item-controls">
 
-                        <button onclick="changeQuantity(${index}, -1)">
-                            -
-                        </button>
+    const url =
+        "https://wa.me/" +
+        whatsappNumber +
+        "?text=" +
+        text;
 
-                        <span>
-                            ${item.quantity}
-                        </span>
 
-                        <button onclick="changeQuantity(${index}, 1)">
-                            +
-                        </button>
+    window.open(url, "_blank");
 
-                        <button onclick="removeItem(${index})">
-                            <i class="fas fa-trash"></i>
-                        </button>
+}
 
-                    </div>
 
-                `;
+/* ================= MODAL CLICK ================= */
 
+document
+    .getElementById("productModal")
+    .addEventListener("click", function(event) {
 
-                cartItems.appendChild(div);
-
-            });
-
-
-            cartCount.textContent = count;
-
-            cartTotal.textContent =
-                total.toLocaleString("tr-TR") + " TL";
-
-        }
-
-
-
-        function changeQuantity(index, amount) {
-
-            cart[index].quantity += amount;
-
-
-            if (cart[index].quantity <= 0) {
-
-                cart.splice(index, 1);
-
-            }
-
-
-            updateCart();
-
-        }
-
-
-
-        function removeItem(index) {
-
-            cart.splice(index, 1);
-
-            updateCart();
-
-        }
-
-
-
-        function clearCart() {
-
-            cart = [];
-
-            updateCart();
-
-        }
-
-
-
-        function openCart() {
-
-            document
-                .getElementById("cartDrawer")
-                .classList.add("active");
-
-            document
-                .getElementById("cartOverlay")
-                .classList.add("active");
-
-        }
-
-
-
-        function closeCart() {
-
-            document
-                .getElementById("cartDrawer")
-                .classList.remove("active");
-
-            document
-                .getElementById("cartOverlay")
-                .classList.remove("active");
-
-        }
-
-
-
-        function goToOrder() {
-
-            closeCart();
-
-            document
-                .getElementById("contact")
-                .scrollIntoView({
-                    behavior: "smooth"
-                });
-
-        }
-
-
-
-        /* =========================
-           ÜRÜN MODALI
-        ========================== */
-
-        let selectedProduct = null;
-
-        let modalQuantity = 1;
-
-
-        function openProduct(
-            name,
-            price,
-            description,
-            image
-        ) {
-
-            selectedProduct = {
-                name: name,
-                price: price,
-                description: description,
-                image: image
-            };
-
-
-            modalQuantity = 1;
-
-
-            document.getElementById("modalName")
-                .textContent = name;
-
-
-            document.getElementById("modalPrice")
-                .textContent =
-                price > 0
-                    ? price + " TL"
-                    : "Fiyat bilgisi";
-
-
-            document.getElementById("modalDescription")
-                .textContent = description;
-
-
-            document.getElementById("modalImage")
-                .src = image;
-
-
-            document.getElementById("modalQuantity")
-                .textContent = modalQuantity;
-
-
-            document
-                .getElementById("productModal")
-                .classList.add("active");
-
-        }
-
-
-
-        function closeProduct() {
-
-            document
-                .getElementById("productModal")
-                .classList.remove("active");
-
-        }
-
-
-
-        function changeModalQuantity(amount) {
-
-            modalQuantity += amount;
-
-
-            if (modalQuantity < 1) {
-
-                modalQuantity = 1;
-
-            }
-
-
-            document.getElementById("modalQuantity")
-                .textContent = modalQuantity;
-
-        }
-
-
-
-        function addModalProduct() {
-
-            if (!selectedProduct) {
-                return;
-            }
-
-
-            if (selectedProduct.price <= 0) {
-
-                alert(
-                    "Bu ürünün fiyatı henüz belirlenmedi."
-                );
-
-                return;
-
-            }
-
-
-            addToCart(
-                selectedProduct.name,
-                selectedProduct.price,
-                modalQuantity
-            );
-
+        if (event.target === this) {
 
             closeProduct();
 
         }
 
+    });
 
 
-        /* =========================
-           WHATSAPP SİPARİŞ
-        ========================== */
+/* ================= INITIAL ================= */
 
-          const whatsappNumber = "905315906477";
+updateCart();
 
-
-        function sendOrder(event) {
-
-            event.preventDefault();
-
-
-            if (cart.length === 0) {
-
-                alert(
-                    "Önce sepetinize ürün ekleyin."
-                );
-
-                return;
-
-            }
-
-
-            const name =
-                document.getElementById(
-                    "customerName"
-                ).value;
-
-
-            const phone =
-                document.getElementById(
-                    "customerPhone"
-                ).value;
-
-
-            const city =
-                document.getElementById(
-                    "customerCity"
-                ).value;
-
-
-            const address =
-                document.getElementById(
-                    "customerAddress"
-                ).value;
-
-
-            const note =
-                document.getElementById(
-                    "customerNote"
-                ).value;
-
-
-            let message =
-                "Merhaba, Gönen sitesinden sipariş vermek istiyorum.%0A%0A";
-
-
-            message +=
-                "*Müşteri Bilgileri*%0A";
-
-            message +=
-                "Ad Soyad: " +
-                encodeURIComponent(name) +
-                "%0A";
-
-            message +=
-                "Telefon: " +
-                encodeURIComponent(phone) +
-                "%0A";
-
-            message +=
-                "İl / İlçe: " +
-                encodeURIComponent(city) +
-                "%0A";
-
-            message +=
-                "Adres: " +
-                encodeURIComponent(address) +
-                "%0A";
-
-
-            message +=
-                "%0A*Sipariş*%0A";
-
-
-            let total = 0;
-
-
-            cart.forEach(item => {
-
-                const itemTotal =
-                    item.price * item.quantity;
-
-
-                total += itemTotal;
-
-
-                message +=
-                    encodeURIComponent(
-                        item.name
-                    ) +
-                    " x " +
-                    item.quantity +
-                    " = " +
-                    itemTotal +
-                    " TL%0A";
-
-            });
-
-
-            message +=
-                "%0A*Toplam: " +
-                total +
-                " TL*%0A";
-
-
-            if (note.trim() !== "") {
-
-                message +=
-                    "%0ANot: " +
-                    encodeURIComponent(note);
-
-            }
-
-
-            const whatsappURL =
-                "https://wa.me/" +
-                whatsappNumber +
-                "?text=" +
-                message;
-
-
-            window.open(
-                whatsappURL,
-                "_blank"
-            );
-
-        }
-
-
-
-        /* =========================
-           MOBİL MENÜ
-        ========================== */
-
-        function toggleMenu() {
-
-            document
-                .querySelector(".navbar")
-                .classList.toggle("active");
-
-        }
-
-
-        /* Menü linkine tıklanınca kapat */
-
-        document
-            .querySelectorAll(".navbar a")
-            .forEach(link => {
-
-                link.addEventListener(
-                    "click",
-                    () => {
-
-                        document
-                            .querySelector(".navbar")
-                            .classList.remove("active");
-
-                    }
-                );
-
-            });
-
-
-        /* İlk sepet güncellemesi */
-
-        updateCart();
-
-    </script>
+</script>
 
 </body>
-
 </html>
