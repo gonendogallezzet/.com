@@ -96,6 +96,18 @@
 
 <section class="home" id="home">
 
+    <div class="home-bg">
+
+        <img src="home.png"
+             alt=""
+             class="home-slideshow"
+             data-images="home.png,foto2.jpg">
+
+        <div class="home-overlay"></div>
+
+    </div>
+
+
     <div class="home-content">
 
         <span class="home-small-title">
@@ -2284,7 +2296,7 @@ document.addEventListener(
 
         const slideshows =
             document.querySelectorAll(
-                ".product-slideshow"
+        ".product-slideshow, .home-slideshow"
             );
 
 
@@ -2335,47 +2347,63 @@ document.addEventListener(
                 );
 
 
-                setInterval(
-                    function() {
-
-                        image.classList.add(
-                            "changing"
-                        );
+                image.classList.add("zooming");
 
 
-                        setTimeout(
-                            function() {
+setInterval(
+    function() {
 
-                                currentIndex++;
-
-
-                                if (
-                                    currentIndex >=
-                                    imageList.length
-                                ) {
-
-                                    currentIndex = 0;
-
-                                }
+        image.classList.add(
+            "changing"
+        );
 
 
-                                image.src =
-                                    imageList[
-                                        currentIndex
-                                    ];
+        setTimeout(
+            function() {
+
+                currentIndex++;
 
 
-                                image.classList.remove(
-                                    "changing"
-                                );
+                if (
+                    currentIndex >=
+                    imageList.length
+                ) {
 
-                            },
-                            1200
-                        );
+                    currentIndex = 0;
 
-                    },
-                    6000
+                }
+
+
+                image.src =
+                    imageList[
+                        currentIndex
+                    ];
+
+
+                image.classList.remove(
+                    "changing"
                 );
+
+
+                image.classList.remove(
+                    "zooming"
+                );
+
+
+                void image.offsetWidth;
+
+
+                image.classList.add(
+                    "zooming"
+                );
+
+            },
+            1000
+        );
+
+    },
+    6000
+);
 
             }
         );
